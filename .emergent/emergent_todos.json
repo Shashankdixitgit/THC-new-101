@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Phase 1: Backend API setup - partner inquiry, contact, events endpoints + Mongo",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2a: Foundation - CSS tokens, fonts, routing, SiteLayout (Nav + Footer)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2b: Home page - Hero, LogoMarquee, Flywheel, Stakeholders, Gallery, CTA",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2c: Inner pages - Who It's For, Events, Community",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2d: Remaining pages - Membership, Partner (with form), About Us",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 3: Testing, responsive check, polish",
+    "status": "in_progress"
+  }
+]
