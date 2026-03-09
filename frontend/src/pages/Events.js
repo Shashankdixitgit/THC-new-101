@@ -81,7 +81,7 @@ export default function Events() {
           </div>
           <div className="bg-white rounded-2xl border border-[rgba(13,27,62,0.10)] overflow-hidden shadow-[0_1px_0_rgba(13,27,62,0.06),0_14px_30px_rgba(13,27,62,0.08)]">
             <iframe
-              src="https://lu.ma/embed/calendar/cal-El9ui64zmnueE73/events"
+              src="https://lu.ma/embed/calendar/cal-El9ui64zmnueE73/events?lt=light"
               title="THC Events Calendar"
               className="w-full border-0"
               style={{ height: '600px' }}
