@@ -126,12 +126,7 @@ export const FlywheelDiagram = () => {
                     key={seg.id}
                     data-testid={`flywheel-segment-${seg.id}`}
                     onClick={() => setActive(isActive ? null : seg.id)}
-                    onMouseEnter={() => setActive(seg.id)}
-                    className={`absolute flex flex-col items-center gap-1 rounded-2xl transition-shadow duration-200 cursor-pointer z-10 ${
-                      isActive
-                        ? 'bg-white shadow-lg scale-110'
-                        : 'bg-white/90 hover:shadow-md'
-                    }`}
+                    className="absolute flex flex-col items-center gap-1 rounded-2xl transition-shadow duration-200 cursor-pointer z-10 bg-white/90 hover:shadow-md"
                     style={{
                       left: x - 42,
                       top: y - 38,
