@@ -59,10 +59,16 @@ export default function About() {
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0D1B3E] tracking-tight leading-tight mb-6">
                 Built from the Belief that Healthcare Innovation Fails Without the Right <span className="text-[#E8541A]">Ecosystem</span>
               </h1>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
+              <div className="space-y-5 text-[#6B7280] leading-relaxed">
                 <p>
-                  THC was founded to fix the disconnect between innovators and healthcare adopters. Too many great solutions fail not because they're bad — but because they never found the right problems, the right partners, or the right path to adoption.
+                  THC was founded to fix the disconnect between innovators and healthcare adopters.
                 </p>
+                <blockquote className="relative bg-white rounded-2xl border-l-4 border-[#E8541A] p-6 shadow-[0_1px_0_rgba(13,27,62,0.06),0_14px_30px_rgba(13,27,62,0.08)]">
+                  <span className="absolute -top-3 -left-1 text-[#E8541A]/15 font-display text-6xl leading-none select-none">"</span>
+                  <p className="font-display text-lg sm:text-xl text-[#0D1B3E] font-medium leading-snug italic">
+                    Too many great solutions fail not because they're bad — but because they never found the <span className="text-[#E8541A] not-italic font-semibold">right problems</span>, the <span className="text-[#1A7B6E] not-italic font-semibold">right partners</span>, or the <span className="text-[#E8541A] not-italic font-semibold">right path to adoption</span>.
+                  </p>
+                </blockquote>
                 <p>
                   We're building the infrastructure for that journey.
                 </p>
