@@ -47,7 +47,7 @@ export const FlywheelDiagram = () => {
     <section data-testid="flywheel-section" className="py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-[#1A7B6E] mb-3 block">What THC Does</span>
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[rgba(26,123,110,0.08)] border border-[rgba(26,123,110,0.15)] font-mono text-[11px] tracking-[0.12em] uppercase text-[#1A7B6E] mb-4">What THC Does</span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0D1B3E] tracking-tight leading-tight">
             We Run a Healthcare <span className="text-[#E8541A]">Innovation Flywheel</span>
           </h2>

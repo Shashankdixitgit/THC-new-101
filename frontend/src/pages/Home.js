@@ -146,7 +146,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="py-16 sm:py-20" style={{ background: 'linear-gradient(90deg, rgba(26,123,110,0.10), rgba(232,84,26,0.10))' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-[#1A7B6E] block mb-4">Join 5,000+ Healthcare Professionals</span>
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[rgba(26,123,110,0.08)] border border-[rgba(26,123,110,0.15)] font-mono text-[11px] tracking-[0.12em] uppercase text-[#1A7B6E] mb-4">Join 5,000+ Healthcare Professionals</span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0D1B3E] tracking-tight mb-4 leading-tight">
             Ready to Shape the<br />Future of Healthcare?
           </h2>
