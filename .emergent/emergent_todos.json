@@ -1,26 +1,18 @@
 [
   {
-    "content": "Phase 1: Backend API setup - partner inquiry, contact, events endpoints + Mongo",
+    "content": "Retrieve and map uploaded speaker images to speaker data",
     "status": "completed"
   },
   {
-    "content": "Phase 2a: Foundation - CSS tokens, fonts, routing, SiteLayout (Nav + Footer)",
+    "content": "Locate speakers array in Home.js and identify placeholder entries",
     "status": "completed"
   },
   {
-    "content": "Phase 2b: Home page - Hero, LogoMarquee, Flywheel, Stakeholders, Gallery, CTA",
+    "content": "Replace 4 placeholder speakers with real data and image URLs",
     "status": "completed"
   },
   {
-    "content": "Phase 2c: Inner pages - Who It's For, Events, Community",
-    "status": "completed"
-  },
-  {
-    "content": "Phase 2d: Remaining pages - Membership, Partner (with form), About Us",
-    "status": "completed"
-  },
-  {
-    "content": "Phase 3: Testing, responsive check, polish",
+    "content": "Verify with screenshot that speakers section displays correctly",
     "status": "completed"
   }
 ]

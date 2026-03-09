@@ -12,7 +12,8 @@
   - Consistent component system (shadcn/ui + Tailwind)
   - Working CTAs
   - Forms with validation + success/error feedback (Sonner toasts)
-- ✅ Validate via comprehensive testing: **100% pass rate** (backend + frontend).
+- ✅ Home page “Featured Speakers” marquee uses **100% real speaker data and images** (8 entries; no placeholders).
+- ✅ Validate via comprehensive testing: **100% pass rate** (backend + frontend) + verified speakers section rendering.
 
 ---
 
@@ -113,7 +114,30 @@
 
 ---
 
-### Phase 4 — Optional: Luma events integration POC + rollout (only if credentials available) **NOT STARTED (Optional)**
+### Phase 4 — Content polish: Featured Speakers (replace placeholders) **COMPLETED**
+**Goal:** remove placeholder speaker entries and ensure the “Featured Speakers” marquee shows real people with correct names/roles.
+
+**User stories (completed)**
+1. ✅ As a visitor, I see credible real speakers (no placeholders) in the Home page marquee.
+2. ✅ As a visitor, each speaker shows a consistent card layout (image, name, role) and remains readable on desktop/mobile.
+3. ✅ As a maintainer, speaker entries can be updated by editing the `speakers` list in `frontend/src/pages/Home.js`.
+
+**Steps (completed)**
+- ✅ Located the Home page Featured Speakers marquee data array in `frontend/src/pages/Home.js`.
+- ✅ Replaced the last 4 placeholder speakers (previously using Unsplash placeholders) with:
+  - Shaurya Verma — Founder, CEO @ iksa.ai
+  - Dr. Vishal Gandhi — Founder & CEO, BIORx Ventures
+  - Gaurav Soni — Co-Founder, Lean Apps
+  - Dr. Amitesh Khare, MD — Chief Medical Innovation Officer
+- ✅ Updated both the primary and duplicated arrays used for seamless marquee looping.
+- ✅ Verified no remaining placeholder/Unsplash image URLs in the speakers list.
+- ✅ Confirmed UI renders correctly via screenshot verification (images + names + roles visible).
+
+**Deliverable:** ✅ Featured Speakers marquee uses 8 real speaker entries with correct images, names, and roles.
+
+---
+
+### Phase 5 — Optional: Luma events integration POC + rollout (only if credentials available) **NOT STARTED (Optional)**
 **Goal:** replace seeded events with real Luma data safely.
 
 **User stories (optional / future)**
@@ -132,8 +156,8 @@
 
 ## 3) Next Actions (Immediate)
 All planned phases are complete. Optional next actions if desired:
-1. Optional: add Luma integration + caching (Phase 4).
-2. Optional: consolidate content into `/src/content/*.js` for easier editorial updates.
+1. Optional: add Luma integration + caching (Phase 5).
+2. Optional: consolidate content into `/src/content/*.js` for easier editorial updates (e.g., speakers, testimonials, FAQs).
 3. Optional: add SEO enhancements (OpenGraph images, meta descriptions per route) + sitemap.
 4. Optional: add lightweight framer-motion entrance animations (respect reduced motion).
 
@@ -143,5 +167,6 @@ All planned phases are complete. Optional next actions if desired:
 - ✅ All 7 routes render with consistent nav/footer and match skeleton copy structure.
 - ✅ Partner form validates, submits successfully, persists to Mongo, shows success/error feedback.
 - ✅ Events page reliably loads events from backend (`GET /api/events`) and filters upcoming/past.
+- ✅ Home page “Featured Speakers” marquee shows **8 real speakers** with correct images/names/roles (no placeholders).
 - ✅ Design system applied: brand palette, typography (Playfair/DM Sans/DM Mono), shadcn tokens, no centered layout.
-- ✅ Testing: one full E2E pass with no broken links, no console errors, responsive nav works (100% pass rate).
+- ✅ Testing: full E2E pass with no broken links, no console errors, responsive nav works (100% pass rate).
