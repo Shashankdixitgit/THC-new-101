@@ -28,6 +28,15 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+        <script>
+            function removeBadge() {
+                var badge = document.getElementById('emergent-badge');
+                if (badge) badge.remove();
+            }
+            removeBadge();
+            document.addEventListener('DOMContentLoaded', removeBadge);
+            new MutationObserver(function() { removeBadge(); }).observe(document.body, { childList: true, subtree: true });
+        </script>
         <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
