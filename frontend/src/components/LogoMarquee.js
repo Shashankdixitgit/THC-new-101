@@ -1,8 +1,22 @@
 const LOGOS = [
-  'Apollo Hospitals', 'Manipal Health', 'Fortis Healthcare', 'Narayana Health',
-  'Max Healthcare', 'Cipla', 'Dr. Reddy\'s', 'Biocon', 'PharmEasy',
-  'Practo', '1mg', 'MediBuddy', 'Pristyn Care', 'HealthKart',
-  'Niramai', 'Dozee', 'SigTuple', 'Qure.ai',
+  { name: 'Apollo Hospitals', domain: 'apollohospitals.com' },
+  { name: 'Manipal Health', domain: 'manipalhospitals.com' },
+  { name: 'Fortis Healthcare', domain: 'fortishealthcare.com' },
+  { name: 'Narayana Health', domain: 'narayanahealth.org' },
+  { name: 'Max Healthcare', domain: 'maxhealthcare.in' },
+  { name: 'Cipla', domain: 'cipla.com' },
+  { name: "Dr. Reddy's", domain: 'drreddys.com' },
+  { name: 'Biocon', domain: 'biocon.com' },
+  { name: 'PharmEasy', domain: 'pharmeasy.in' },
+  { name: 'Practo', domain: 'practo.com' },
+  { name: '1mg', domain: '1mg.com' },
+  { name: 'MediBuddy', domain: 'medibuddy.in' },
+  { name: 'Pristyn Care', domain: 'pristyncare.com' },
+  { name: 'HealthKart', domain: 'healthkart.com' },
+  { name: 'Niramai', domain: 'niramai.com' },
+  { name: 'Dozee', domain: 'dozee.io' },
+  { name: 'SigTuple', domain: 'sigtuple.com' },
+  { name: 'Qure.ai', domain: 'qure.ai' },
 ];
 
 export const LogoMarquee = () => {
@@ -21,10 +35,16 @@ export const LogoMarquee = () => {
         <div className="animate-marquee flex gap-6 hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
           {[...LOGOS, ...LOGOS].map((logo, i) => (
             <div
-              key={`${logo}-${i}`}
-              className="flex-shrink-0 px-5 py-2.5 bg-white rounded-full border border-[rgba(13,27,62,0.08)] text-sm font-medium text-[#0D1B3E]/70 whitespace-nowrap"
+              key={`${logo.name}-${i}`}
+              className="flex-shrink-0 flex items-center gap-2.5 px-5 py-2.5 bg-white rounded-full border border-[rgba(13,27,62,0.08)] text-sm font-medium text-[#0D1B3E]/70 whitespace-nowrap"
             >
-              {logo}
+              <img
+                src={`https://www.google.com/s2/favicons?domain=${logo.domain}&sz=32`}
+                alt={logo.name}
+                className="w-5 h-5 object-contain rounded-sm"
+                loading="lazy"
+              />
+              {logo.name}
             </div>
           ))}
         </div>
