@@ -105,14 +105,15 @@ export default function About() {
                 data-testid={`team-member-${i}`}
                 className="bg-white rounded-2xl border border-[rgba(13,27,62,0.10)] p-6 shadow-[0_1px_0_rgba(13,27,62,0.06),0_14px_30px_rgba(13,27,62,0.08)] text-center hover:-translate-y-0.5 transition-transform duration-200"
               >
-                <Avatar className="w-28 h-28 mx-auto mb-4">
+                <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white bg-white relative" style={{ boxShadow: '0 0 0 1px rgba(13,27,62,0.08)' }}>
                   {member.image ? (
-                    <AvatarImage src={member.image} alt={member.name} className="object-cover object-top" />
-                  ) : null}
-                  <AvatarFallback className="bg-[#0D1B3E] text-white text-lg font-semibold">
-                    {member.initials}
-                  </AvatarFallback>
-                </Avatar>
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover scale-[0.72] rounded-full" />
+                  ) : (
+                    <div className="w-full h-full bg-[#0D1B3E] flex items-center justify-center">
+                      <span className="text-white text-lg font-semibold">{member.initials}</span>
+                    </div>
+                  )}
+                </div>
                 <h3 className="text-lg font-semibold text-[#0D1B3E]">{member.name}</h3>
                 <p className="text-sm text-[#6B7280] mt-1">{member.role}</p>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-[#1A7B6E] mt-3 hover:underline">
