@@ -80,7 +80,6 @@ const COMPARISON_FEATURES = [
   { name: 'Curated Intros & Matchmaking', open: false, starter: true, ascent: true, catalyst: true },
   { name: 'Closed CXO/Investor Forums', open: false, starter: false, ascent: true, catalyst: true },
   { name: 'Co-creation & Pilots', open: false, starter: false, ascent: true, catalyst: true },
-  { name: 'Concierge Support', open: false, starter: false, ascent: false, catalyst: true },
 ];
 
 const FAQS = [
@@ -123,13 +122,13 @@ export default function Join() {
   return (
     <div data-testid="join-page">
       {/* Hero */}
-      <section className="py-16 sm:py-20 lg:py-24" style={{ background: 'linear-gradient(180deg, rgba(13,27,62,0.04) 0%, rgba(245,240,232,1) 60%)' }}>
+      <section className="py-24 sm:py-32 lg:py-40" style={{ background: 'linear-gradient(180deg, rgba(13,27,62,0.04) 0%, rgba(245,240,232,1) 60%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTag className="text-center">THC Memberships</SectionTag>
-          <h1 className="font-display text-4xl sm:text-5xl font-semibold text-[#0D1B3E] tracking-tight leading-tight mb-4">
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-[#0D1B3E] tracking-tight leading-[1.05] mb-6">
             Membership <span className="text-[#E8541A]">Pathways</span>
           </h1>
-          <p className="text-lg text-[#6B7280] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
             Find your place in India's largest healthtech community. Memberships are annual.
           </p>
         </div>
