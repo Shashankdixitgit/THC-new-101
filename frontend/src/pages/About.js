@@ -21,12 +21,6 @@ const TEAM = [
     image: '',
     initials: 'SD',
   },
-  {
-    name: 'Sonal',
-    role: 'Founder Office',
-    image: '',
-    initials: 'S',
-  },
 ];
 
 const VALUES = [
@@ -104,7 +98,7 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl font-semibold text-[#0D1B3E] tracking-tight mb-8">
             Core Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEAM.map((member, i) => (
               <div
                 key={i}
