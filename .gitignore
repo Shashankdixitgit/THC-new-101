@@ -32,3 +32,7 @@ yarn-error.log*
 
 # Misc
 .cache/
+-e 
+# Environment files
+*.env
+*.env.*
