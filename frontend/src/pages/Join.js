@@ -22,7 +22,7 @@ const TIERS = [
   },
   {
     tier: 'Tier 2',
-    name: 'Starter',
+    name: 'THC Connect',
     price: '\u20B99,999 / year',
     tagline: 'For professionals and early founders exploring healthcare innovation.',
     features: [
@@ -42,7 +42,7 @@ const TIERS = [
     price: '\u20B949,999 / cohort',
     tagline: 'For founders building serious healthcare businesses.',
     features: [
-      'Everything in Starter',
+      'Everything in THC Connect',
       'ASCENT program (clinical, GTM & funding)',
       'Curated intros to clinicians & operators',
       'Problem-solution fit feedback',
@@ -59,7 +59,7 @@ const TIERS = [
     price: 'Custom / invite only',
     tagline: 'A private circle for CXOs, hospital leaders, pharma & investors.',
     features: [
-      'Everything in Starter',
+      'Everything in THC Connect',
       'Closed CXO & investor forums',
       'Early access to vetted champions',
       'Co-creation & pilot opportunities',
@@ -85,8 +85,8 @@ const COMPARISON_FEATURES = [
 
 const FAQS = [
   {
-    q: 'What is the difference between Starter and ASCENT?',
-    a: 'Starter gives you access to the THC community, events, and resources. ASCENT is a structured program for founders that includes clinical feedback, GTM support, and investor-ready preparation over a cohort period. ASCENT builds on Starter with intensive mentorship and demo day opportunities.',
+    q: 'What is the difference between THC Connect and ASCENT?',
+    a: 'THC Connect gives you access to the THC community, events, and resources. ASCENT is a structured program for founders that includes clinical feedback, GTM support, and investor-ready preparation over a cohort period. ASCENT builds on THC Connect with intensive mentorship and demo day opportunities.',
   },
   {
     q: 'Can I upgrade my membership mid-year?',
@@ -160,7 +160,7 @@ export default function Join() {
                   <TableRow className="border-b border-[rgba(13,27,62,0.08)]">
                     <TableHead className="text-[#0D1B3E] font-semibold min-w-[200px]">Feature</TableHead>
                     <TableHead className="text-center text-[#0D1B3E] font-semibold">Open</TableHead>
-                    <TableHead className="text-center text-[#0D1B3E] font-semibold">Starter</TableHead>
+                    <TableHead className="text-center text-[#0D1B3E] font-semibold">THC Connect</TableHead>
                     <TableHead className="text-center text-[#0D1B3E] font-semibold bg-[rgba(26,123,110,0.04)]">ASCENT</TableHead>
                     <TableHead className="text-center text-[#0D1B3E] font-semibold">Catalyst</TableHead>
                   </TableRow>
