@@ -12,8 +12,8 @@ import {
 const STATS = [
   { value: '5,000+', label: 'Healthcare professionals in the community' },
   { value: '1,500+', label: 'Startups in healthtech & life sciences' },
-  { value: '30+', label: 'Curated events run in 2025' },
-  { value: '1,000+', label: 'Stakeholders actively engaged' },
+  { value: '50+', label: 'Curated events run in 2025' },
+  { value: '2,000+', label: 'Stakeholders actively engaged' },
 ];
 
 const NETWORK_LOGOS = [
