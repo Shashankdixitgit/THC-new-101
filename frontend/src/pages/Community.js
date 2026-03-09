@@ -17,34 +17,34 @@ const STATS = [
 ];
 
 const NETWORK_LOGOS = [
-  { name: 'Apollo Hospitals', category: 'Hospitals' },
-  { name: 'Manipal Health', category: 'Hospitals' },
-  { name: 'Fortis Healthcare', category: 'Hospitals' },
-  { name: 'Narayana Health', category: 'Hospitals' },
-  { name: 'Max Healthcare', category: 'Hospitals' },
-  { name: 'Cipla', category: 'Pharma' },
-  { name: 'Dr. Reddy\'s', category: 'Pharma' },
-  { name: 'Biocon', category: 'Pharma' },
-  { name: 'Sun Pharma', category: 'Pharma' },
-  { name: 'PharmEasy', category: 'Founder Network' },
-  { name: 'Practo', category: 'Founder Network' },
-  { name: '1mg', category: 'Founder Network' },
-  { name: 'MediBuddy', category: 'Founder Network' },
-  { name: 'Niramai', category: 'Founder Network' },
-  { name: 'Dozee', category: 'Founder Network' },
-  { name: 'Qure.ai', category: 'Founder Network' },
-  { name: 'SigTuple', category: 'Founder Network' },
-  { name: 'Stryker', category: 'Medtech' },
-  { name: 'Medtronic', category: 'Medtech' },
-  { name: 'Siemens Healthineers', category: 'Medtech' },
-  { name: 'GE HealthCare', category: 'Medtech' },
-  { name: 'Sequoia Capital', category: 'Capital' },
-  { name: 'Lightspeed', category: 'Capital' },
-  { name: 'Healthquad', category: 'Capital' },
-  { name: 'Chiratae Ventures', category: 'Capital' },
-  { name: 'Google Health', category: 'Big Tech' },
-  { name: 'Microsoft Health', category: 'Big Tech' },
-  { name: 'Amazon Health', category: 'Big Tech' },
+  { name: 'Apollo Hospitals', category: 'Hospitals', domain: 'apollohospitals.com' },
+  { name: 'Manipal Health', category: 'Hospitals', domain: 'manipalhospitals.com' },
+  { name: 'Fortis Healthcare', category: 'Hospitals', domain: 'fortishealthcare.com' },
+  { name: 'Narayana Health', category: 'Hospitals', domain: 'narayanahealth.org' },
+  { name: 'Max Healthcare', category: 'Hospitals', domain: 'maxhealthcare.in' },
+  { name: 'Cipla', category: 'Pharma', domain: 'cipla.com' },
+  { name: 'Dr. Reddy\'s', category: 'Pharma', domain: 'drreddys.com' },
+  { name: 'Biocon', category: 'Pharma', domain: 'biocon.com' },
+  { name: 'Sun Pharma', category: 'Pharma', domain: 'sunpharma.com' },
+  { name: 'PharmEasy', category: 'Founder Network', domain: 'pharmeasy.in' },
+  { name: 'Practo', category: 'Founder Network', domain: 'practo.com' },
+  { name: '1mg', category: 'Founder Network', domain: '1mg.com' },
+  { name: 'MediBuddy', category: 'Founder Network', domain: 'medibuddy.in' },
+  { name: 'Niramai', category: 'Founder Network', domain: 'niramai.com' },
+  { name: 'Dozee', category: 'Founder Network', domain: 'dozee.io' },
+  { name: 'Qure.ai', category: 'Founder Network', domain: 'qure.ai' },
+  { name: 'SigTuple', category: 'Founder Network', domain: 'sigtuple.com' },
+  { name: 'Stryker', category: 'Medtech', domain: 'stryker.com' },
+  { name: 'Medtronic', category: 'Medtech', domain: 'medtronic.com' },
+  { name: 'Siemens Healthineers', category: 'Medtech', domain: 'siemens-healthineers.com' },
+  { name: 'GE HealthCare', category: 'Medtech', domain: 'gehealthcare.com' },
+  { name: 'Sequoia Capital', category: 'Capital', domain: 'sequoiacap.com' },
+  { name: 'Lightspeed', category: 'Capital', domain: 'lsvp.com' },
+  { name: 'Healthquad', category: 'Capital', domain: 'healthquad.com' },
+  { name: 'Chiratae Ventures', category: 'Capital', domain: 'chiratae.com' },
+  { name: 'Google Health', category: 'Big Tech', domain: 'google.com' },
+  { name: 'Microsoft Health', category: 'Big Tech', domain: 'microsoft.com' },
+  { name: 'Amazon Health', category: 'Big Tech', domain: 'amazon.com' },
 ];
 
 const NETWORK_FILTERS = ['All', 'Founder Network', 'Hospitals', 'Pharma', 'Medtech', 'Capital', 'Big Tech'];
@@ -130,7 +130,13 @@ export default function Community() {
           {/* Logos */}
           <div className="flex flex-wrap gap-3">
             {filteredLogos.map((logo) => (
-              <div key={logo.name} className="px-4 py-2.5 bg-white rounded-full border border-[rgba(13,27,62,0.08)] text-sm font-medium text-[#0D1B3E]/70">
+              <div key={logo.name} className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-full border border-[rgba(13,27,62,0.08)] text-sm font-medium text-[#0D1B3E]/70 hover:-translate-y-0.5 transition-transform duration-200">
+                <img
+                  src={`https://www.google.com/s2/favicons?domain=${logo.domain}&sz=32`}
+                  alt={logo.name}
+                  className="w-5 h-5 object-contain rounded-sm"
+                  loading="lazy"
+                />
                 {logo.name}
               </div>
             ))}
