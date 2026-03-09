@@ -65,7 +65,7 @@ export default function About() {
                 </p>
                 <blockquote className="relative bg-white rounded-2xl border-l-4 border-[#E8541A] p-6 shadow-[0_1px_0_rgba(13,27,62,0.06),0_14px_30px_rgba(13,27,62,0.08)]">
                   <span className="absolute -top-3 -left-1 text-[#E8541A]/15 font-display text-6xl leading-none select-none">"</span>
-                  <p className="font-display text-lg sm:text-xl text-[#0D1B3E] font-medium leading-snug italic mb-5">
+                  <p className="text-lg sm:text-xl text-[#0D1B3E] font-medium leading-snug mb-5">
                     Too many great solutions fail not because they're bad — but because they never found the
                   </p>
                   <div className="flex flex-wrap gap-2.5">
